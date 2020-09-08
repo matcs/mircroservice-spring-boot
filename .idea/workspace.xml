@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="77125a8d-80ce-46d9-b4c0-59a288ba5879" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h9bZAyCkKSJxVyHsicmxF5DKbz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="course" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.course.CourseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77125a8d-80ce-46d9-b4c0-59a288ba5879" name="Default Changelist" comment="" />
+      <created>1599426308075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599426308075</updated>
+      <workItem from="1599426309321" duration="1290000" />
+      <workItem from="1599427642050" duration="657000" />
+      <workItem from="1599428517167" duration="92000" />
+      <workItem from="1599428663538" duration="1731000" />
+      <workItem from="1599588959094" duration="97000" />
+      <workItem from="1599589129428" duration="38000" />
+      <workItem from="1599589998742" duration="355000" />
+      <workItem from="1599590438308" duration="2814000" />
+      <workItem from="1599596934185" duration="92000" />
+      <workItem from="1599597211335" duration="353000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="163" y="0" key="#Project_Structure" timestamp="1599595336477">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1599595336477" />
+    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599590144289">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599590144289" />
+    <state x="412" y="161" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599590095491">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="412" y="161" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1599590095491" />
+    <state x="244" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599596361268">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="244" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1599596361268" />
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1599590352349">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599590352349" />
+    <state width="1323" height="300" key="GridCell.Tab.0.bottom" timestamp="1599596840194">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="300" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599596840194" />
+    <state width="1323" height="300" key="GridCell.Tab.0.center" timestamp="1599596840194">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="300" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599596840194" />
+    <state width="1323" height="300" key="GridCell.Tab.0.left" timestamp="1599596840194">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="300" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599596840194" />
+    <state width="1323" height="300" key="GridCell.Tab.0.right" timestamp="1599596840194">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="300" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599596840194" />
+    <state width="1323" height="300" key="GridCell.Tab.1.bottom" timestamp="1599596840195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="300" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599596840195" />
+    <state width="1323" height="300" key="GridCell.Tab.1.center" timestamp="1599596840195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="300" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1599596840195" />
+    <state width="1323" height="300" key="GridCell.Tab.1.left" timestamp="1599596840195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="300" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1599596840195" />
+    <state width="1323" height="300" key="GridCell.Tab.1.right" timestamp="1599596840195">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="300" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1599596840195" />
+    <state x="214" y="0" key="SettingsEditor" timestamp="1599590163423">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="214" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599590163423" />
+    <state x="65" y="25" key="new project wizard" timestamp="1599595943496">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="25" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1599595943496" />
+    <state x="329" y="105" width="672" height="677" key="run.anything.popup" timestamp="1599428928025">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="329" y="105" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599428928025" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599427929889">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599427929889" />
+  </component>
+</project>
