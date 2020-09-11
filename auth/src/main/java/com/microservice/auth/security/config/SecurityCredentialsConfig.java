@@ -2,45 +2,42 @@ package com.microservice.auth.security.config;
 
 import com.microservice.auth.security.filter.JwtUserAndPasswordAuthenticationFilter;
 import com.microservice.core.property.JwtConfiguration;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.microservice.security.config.SecurityTokenConfig;
+import com.microservice.security.filter.JwtTokenAuthorizationFilter;
+import com.microservice.security.token.converter.TokenConverter;
+import com.microservice.security.token.creator.TokenCreator;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.cors.CorsConfiguration;
-
-import javax.servlet.http.HttpServletResponse;
-
-import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @EnableWebSecurity
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
-public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
+public class SecurityCredentialsConfig extends SecurityTokenConfig {
     private final UserDetailsService userDetailsService;
-    private final JwtConfiguration jwtConfiguration;
+    private final TokenCreator tokenCreator;
+    private final TokenConverter tokenConverter;
+
+    public SecurityCredentialsConfig(JwtConfiguration jwtConfiguration,
+                                     @Qualifier("userDetailsServiceImpl") UserDetailsService userDetailsService,
+                                     TokenCreator tokenCreator,
+                                     TokenConverter tokenConverter) {
+        super(jwtConfiguration);
+        this.userDetailsService = userDetailsService;
+        this.tokenCreator = tokenCreator;
+        this.tokenConverter = tokenConverter;
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
-                .cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues())
-                .and()
-                    .sessionManagement().sessionCreationPolicy(STATELESS)
-                .and()
-                    .exceptionHandling().authenticationEntryPoint((req, resp, e) ->resp.sendError(HttpServletResponse.SC_UNAUTHORIZED))
-                .and()
-                    .addFilter(new JwtUserAndPasswordAuthenticationFilter(authenticationManager(),jwtConfiguration))
-                .authorizeRequests()
-                    .antMatchers(jwtConfiguration.getLoginUrl()).permitAll()
-                    .antMatchers("/course/admin/**").hasRole("ADMIN")
-                    .anyRequest()
-                .authenticated();
+                .addFilter(new JwtUserAndPasswordAuthenticationFilter(authenticationManager(), jwtConfiguration, tokenCreator))
+                .addFilterAfter(new JwtTokenAuthorizationFilter(jwtConfiguration, tokenConverter), UsernamePasswordAuthenticationFilter.class);
+
+        super.configure(http);
     }
 
     @Override
@@ -53,9 +50,4 @@ public class SecurityCredentialsConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-    public void configure(WebSecurity security) throws Exception{
-        security
-                .ignoring()
-                .antMatchers("/test/");
-    }
 }

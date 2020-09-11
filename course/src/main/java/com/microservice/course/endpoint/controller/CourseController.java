@@ -2,6 +2,8 @@ package com.microservice.course.endpoint.controller;
 
 import com.microservice.course.endpoint.service.CourseService;
 import com.microservice.core.model.Course;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("v1/admin/course")
 @Slf4j
 @RequiredArgsConstructor(onConstructor= @__(@Autowired))
+@Api(value = "Endpoint to management courses")
 public class CourseController {
     private final CourseService courseService;
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @ApiOperation(value = "List of all available courses",response = Course[].class)
     public ResponseEntity<Iterable<Course>> listCourse(Pageable pageable){
         return new ResponseEntity<>(courseService.courseIterable(pageable), HttpStatus.OK);
     }
